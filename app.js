@@ -24,6 +24,21 @@ app.post('/submit', (req, res) => {
 
 });
 
+app.post("/pr",(req,res)=>{
+
+  console.log("Request Params:", req.params);    // Should log route parameters (if defined)
+  console.log("Request Query:", req.query);      // Logs query string parameters
+  console.log("Request Body:", req.body);        // Logs body (if middleware is applied)
+  console.log("Request Headers:", req.headers);  // Logs HTTP headers
+  console.log("Request Headers:", req.headers["df"]);  // Logs HTTP headers
+  console.log("Request Method:", req.method);    // Logs the HTTP method
+  console.log("Request URL:", req.url);          // Logs the full URL
+  console.log("Request Path:", req.path);        // Logs the path of the request
+
+  res.json({ message: "Successfully received request" });
+  
+});
+
 
 // Start the server
 const port = 3000;

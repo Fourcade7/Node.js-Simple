@@ -47,3 +47,15 @@ app.listen(port, () => {
 });
 
 
+
+
+function fourcade(names,callback){
+  console.log(names);
+  callback("axax","xixixi");
+  
+}//addd
+
+fourcade("fourcade2077", (data1,data2)=>{
+  console.log('Callback executed with:', data1, data2);
+  
+})
